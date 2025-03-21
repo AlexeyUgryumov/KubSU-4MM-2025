@@ -29,8 +29,6 @@ jobs:
     - name: Build with Gradle Wrapper
       run: ./gradlew build
 
-    
-
   dependency-submission:
 
     runs-on: ubuntu-latest
@@ -39,7 +37,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Set up JDK 24
+    - name: Set up JDK 17
       uses: actions/setup-java@v4
       with:
         java-version: '24'
